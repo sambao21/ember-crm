@@ -4,4 +4,8 @@ App.Router.reopen({
   rootURL: '/'
 });
 
-App.Router.map(function() {});
+App.Router.map(function() {
+  return this.resource('leads', {
+    path: '/'
+  });
+});
