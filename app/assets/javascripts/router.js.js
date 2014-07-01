@@ -9,7 +9,9 @@ App.Router.map(function() {
     path: '/'
   }, function() {
     return this.resource('lead', {
-      path: '/leads/:id'
+      path: 'leads/:id'
+    }, function() {
+      return this.route('edit');
     });
   });
 });
