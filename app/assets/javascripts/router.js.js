@@ -8,6 +8,7 @@ App.Router.map(function() {
   return this.resource('leads', {
     path: '/'
   }, function() {
+    this.route('new');
     return this.resource('lead', {
       path: 'leads/:id'
     }, function() {
