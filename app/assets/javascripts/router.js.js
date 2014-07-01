@@ -4,8 +4,4 @@ App.Router.reopen({
   rootURL: '/'
 });
 
-App.Router.map(function() {
-  return get('*path', {
-    to: 'home#index'
-  });
-});
+App.Router.map(function() {});

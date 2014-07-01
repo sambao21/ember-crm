@@ -5,5 +5,3 @@ App.Router.reopen
 
 App.Router.map ()->
   # @resource('posts')
-  get '*path', to: 'home#index'
-
