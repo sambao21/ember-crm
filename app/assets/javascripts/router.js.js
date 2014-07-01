@@ -7,5 +7,9 @@ App.Router.reopen({
 App.Router.map(function() {
   return this.resource('leads', {
     path: '/'
+  }, function() {
+    return this.resource('lead', {
+      path: '/leads/:id'
+    });
   });
 });
