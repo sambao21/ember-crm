@@ -5,6 +5,13 @@ App.LeadController = Ember.ObjectController.extend({
       if (this.get('model.isDirty')) {
         return this.get('model').save();
       }
+    },
+    "delete": function() {
+      return this.get('model').destroyRecord().then((function(_this) {
+        return function() {
+          return _this.transitionToRoute('leads');
+        };
+      })(this));
     }
   },
   showUnsavedMessage: (function() {
